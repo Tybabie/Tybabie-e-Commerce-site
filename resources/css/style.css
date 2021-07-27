@@ -15,5 +15,19 @@ body{
     font-size: 30px;
     margin-top: -10px;
 }
-
-
+.positon-fixed{
+    
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+#carousel{
+    padding-top: 10vh;
+}
+.carousel-item{
+    background: url('../images/bgg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: cover;
+    height: 60vh;
+}
