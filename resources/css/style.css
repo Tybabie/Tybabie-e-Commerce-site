@@ -47,3 +47,11 @@ body{
 .rounded-circle p{
     margin-top: 50px; 
 }
+#break{
+    height: 55vh;
+    background: url(../images/break\ image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 70px 0px;
+}
