@@ -31,3 +31,6 @@ body{
    background-size: cover;
     height: 60vh;
 }
+.card img{
+    height: 250;
+}
