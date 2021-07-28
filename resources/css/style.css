@@ -55,3 +55,8 @@ body{
     background-size: cover;
     margin: 70px 0px;
 }
+#featured img{
+height: 150px;
+margin: 50px;
+padding: 50px;
+}
