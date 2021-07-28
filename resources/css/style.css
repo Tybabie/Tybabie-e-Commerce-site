@@ -34,3 +34,16 @@ body{
 .card img{
     height: 250;
 }
+.rounded-circle img{
+    height: 130;
+    padding-top: 45px;
+    padding-left: 35px;
+    width: 130;
+}
+.rounded-circle{
+    height: 160;
+    width: 180;
+}
+.rounded-circle p{
+    margin-top: 50px; 
+}
