@@ -56,7 +56,9 @@ body{
     margin: 70px 0px;
 }
 #featured img{
-height: 150px;
-margin: 50px;
-padding: 50px;
+height: 8em;
+width: 9em;
+}
+#featured .card{
+   height: 15em; 
 }
