@@ -62,3 +62,15 @@ width: 9em;
 #featured .card{
    height: 15em; 
 }
+#testimony .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px 0px;
+}
+.quote-width{
+    width: 350px;
+    height: 270px;
+    margin-bottom: 32px;
+  
+}
