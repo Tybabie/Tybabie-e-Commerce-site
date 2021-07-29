@@ -83,3 +83,22 @@ footer h3{
 footer p{
      color: rgba(255, 255, 255, 0.555);
 }
+#about{
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+}
+#about p{
+    font-size: 18px;
+}
+#about h3{
+    margin: 20px 0px;
+    font-size: 25px;
+}
+#award img{
+    width: 5em;
+    height: 4em;
+}
+.p-35{
+    padding: 35px;
+    background-color: rgb(35, 31, 32);
+}
