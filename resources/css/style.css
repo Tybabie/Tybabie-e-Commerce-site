@@ -111,7 +111,7 @@ footer p{
     padding-top: 30vh;
     display: none;
 }
-#login input, .btn{
+#login input{
     width: 100%;
     height: 60px;
     padding-left: 20px;
@@ -121,7 +121,7 @@ footer p{
     height: 150vh;
     padding-top: 30vh;
 }
-#log-in input, .btn, #payment-section input, #payment-section textarea{
+#log-in input{
     width: 100%;
     height: 60px;
     padding-left: 20px;
@@ -130,4 +130,7 @@ footer p{
 #cart{
     height: 100vh;
     padding-top: 30vh;
+}
+#firstName_message, #phonenumber_message, #emailaddress_message, #lastName_message, #phone_message, #email_message {
+    color: crimson;
 }
