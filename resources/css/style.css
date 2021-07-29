@@ -74,3 +74,12 @@ width: 9em;
     margin-bottom: 32px;
   
 }
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.911)1%, rgba(1,1,1)90%);
+}
+footer h3{
+    font-size: 16px;
+}
+footer p{
+     color: rgba(255, 255, 255, 0.555);
+}
