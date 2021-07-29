@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../resources/css/fontawesome/css/all.css">
 </head>
 <body>
-    <!--Nav bar section-->
-<section class="positon-fixed">
+    
+ <!--Nav bar section-->
+ <section class="positon-fixed">
     <div class="row">
         <div class="col">
             <div class="d-flex justify-content-between top-nav text-white">
@@ -106,11 +107,11 @@
     </div>
     
         <div class="text-uppercase d-flex mr-2 ">
-            <a href="index.html" class="nav-link text-light d-md-none d-sm-none d-none d-lg-block d-xl-block">Log In</a>
-            <a href="index.html" class="nav-link text-secondary"><i class="fas fa-user-circle fa-2x"></i></a>
+            <a href="../log-in/index.html" class="nav-link text-light d-md-none d-sm-none d-none d-lg-block d-xl-block">Log In</a>
+            <a href="../log-in/index.html" class="nav-link text-secondary"><i class="fas fa-user-circle fa-2x"></i></a>
            
-            <a href="../cart/index.html" class="nav-link text-light d-md-none d-sm-none d-none d-lg-block d-xl-block">cart</a>
-            <a href="../cart/index.html" class="nav-link text-muted ml-md-3 ml-sm-3 ml-lg-0 ml-4"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            <a href="index.html" class="nav-link text-light d-md-none d-sm-none d-none d-lg-block d-xl-block">cart</a>
+            <a href="index.html" class="nav-link text-muted ml-md-3 ml-sm-3 ml-lg-0 ml-4"><i class="fas fa-shopping-cart fa-2x"></i></a>
             
         </div>
    
@@ -133,90 +134,34 @@
     </nav>
 </section>
 
-<!--Log in section-->
-<section id="login">
+<section id="cart" class="text-center bg-white">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 my-2">
-                <div class=" border-right pr-5 border-design">
-                <h5 class="text-capitalize"><b>welcome back</b></h5>
-                <p class="text-uppercase text-muted text-center"><b>login using your email address</b></p>
-                
-                <form onsubmit="return formValidation()">
-                    
-                    <div class="form-group mt-3">
-                        <input type="email" id="email" placeholder="Email Address *" onfocusout="validateEmail()"><br>
-                        <span  id="email_message"></span>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="tel" id="phone" placeholder="Phone Number *" onfocusout="validatePhone()"><br>
-                        <span  id="phone_message"></span>
-                    </div>
-                    <button class="btn btn-outline-info btn-block btn-lg text-uppercase">log in</button>
-                </form>
-            </div>
-            </div>
-            <div class="col-lg-6 my-2">
-                <h5 class="text-capitalize mb-3"><b>New to Sky.Garden</b></h5>
-                <button class="btn btn-outline-info btn-block btn-lg text-uppercase" id="create-account" onclick="createAccount()">create account</button>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mx-auto">
+                <img src="../resources/images/cart-empty.png" alt="" class="img img-fluid">
+                <h5><b>Your cart is empty and waiting
+                    to be used</b></h5>
+                    <p>Already have an account? <a href="../log-in/index.html" class="text-info"> Login</a> to see items
+                        in your cart</p>
+                        <a href="../index.html" class="btn btn-lg btn-info text-uppercase">start shopping</a>
             </div>
         </div>
+
     </div>
 </section>
 
-
-<section id="log-in">
-    <div class="container">
-        <div class="row">
-
-
-            <div class="col-lg-6 my-2">
-                <h5 class="text-capitalize mb-4"><b>have an account?</b></h5>
-                <button class="btn btn-outline-info btn-block btn-lg text-uppercase mb-3" onclick="logIn()">log in</button>
-            </div>
-
-            <div class="col-lg-6 my-2">
-                <div class="  border-left pl-5 border-design">
-                <h5 class="text-capitalize"><b>creant an account</b></h5>
-                <p class="text-uppercase text-muted text-center"><b>create account using your email address</b></p>
-                
-                <form onsubmit="return formValidationn()">
-                    
-                    <div class="form-group mt-3">
-                        <input type="email" id="emailaddress" placeholder="Email Address *" onfocusout="validateEmailAddress()"><br>
-                        <span id="emailaddress_message"></span>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="text" id="firstname" placeholder="First Name *" onfocusout="validateFname()"><br>
-                        <span  id="firstName_message"></span>
-                        
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="text" id="lastname" placeholder="Last Name *" onfocusout="validateLname()"><br>
-                        <span  id="lastName_message"></span>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="tel" id="phonenumber" placeholder="Phone Number *" onfocusout="validatePhoneNumber()"><br>
-                        <span  id="phonenumber_message"></span>
-                    </div>
-                    <div >
-                        <a class="btn btn-outline-info btn-block btn-lg text-uppercase text-info" >create account</a>
-                        
-                </div>
-                
-                
-                </form>
-                
-            </div>
-            </div>
-
-
+<footer class=" bg-dark">
+    
+    <div class="container text-center">
+        <div class="d-flex justify-content-center">
+            <p class="text-muted border-right pr-2 border-secondary ml-1 mt-2"><a href="#" class="text-muted ">Return Policy   </p>
+                <p class="text-muted border-right pr-2 border-secondary ml-1 mt-2"><a href="#" class="text-muted ">Terms & Conditions  </p>
+                <p class="text-muted  ml-1 mt-2"><a href="#" class="text-muted ">Privacy Policy </p>
         </div>
     </div>
-</section>
-
-
-<script src="../resources/js/jquery.min.js"></script>
+    
+</footer>
+    <script src="../resources/js/jquery.min.js"></script>
         <script src="../resources/js/popper.min.js"></script>
         <script src="../resources/js/bootstrap.min.js"></script>
 </body>

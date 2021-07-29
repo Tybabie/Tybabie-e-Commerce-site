@@ -127,3 +127,7 @@ footer p{
     padding-left: 20px;
    outline: none;
 }
+#cart{
+    height: 100vh;
+    padding-top: 30vh;
+}
