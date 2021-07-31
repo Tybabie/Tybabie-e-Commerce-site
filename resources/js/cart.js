@@ -110,6 +110,46 @@ function Total(products){
     } else {
         localStorage.setItem('Total', products.price)
     }
-   
+}
+
+function displayProduct(){
+    let productContainer = document.querySelector(".product-container")
+    let cartItems = JSON.parse(localStorage.getItem('productsNumberInCart'));
+    let cartCost =  localStorage.getItem('Total')
+    if (cartItems && productContainer) {
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+         productContainer.innerHTML += 
+    `<div class = "single-product"> 
+                <div class = "productName">
+                     <h3>${item.name}<span> X </span> </h3>
+                </div>
+        
+        <div class ="quantityAndPrice"> 
+            <div>
+                <button id = "minus">  - </button>
+                <button>  ${item.numberInCart} </button>
+                <button id = "plus"> + </button>
+            </div>
+            <p>  ${item.numberInCart * item.price} KSH</p>
+        </div>
+            <hr>
+    </div>
+         `
+            
+       })
+       
+       document.getElementById('subtotal').innerHTML += 
+       `<div > 
+       <span>Subtotal</span> 
+        <span class = "cartCost">  ${cartCost} KSH </span>
+       </div> `
+       document.getElementById('cart').style.display='none' 
+       document.getElementById('total').style.display='block'
+       document.getElementById('PIC').style.display='block'
+
+     }
+
 }
 onLoadCartNumbers()
+displayProduct()
